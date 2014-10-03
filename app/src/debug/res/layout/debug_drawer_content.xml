@@ -34,6 +34,57 @@
                 android:id="@+id/textView2"
                 style="@android:style/TextAppearance.Holo.Widget.ActionBar.Subtitle" />
         </LinearLayout>
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/ic_launcher" />
     </LinearLayout>
+
+    <TextView
+        android:layout_gravity="start|end"
+        android:id="@+id/textView3"
+        style="@style/Widget.POC.DebugDrawer.Header"
+        android:text="Network"
+        android:layout_columnSpan="2" />
+
+    <TextView
+        android:layout_gravity="center_vertical|start|end"
+        android:text="Endpoint"
+        android:id="@+id/textView4"
+        style="@style/Widget.POC.DebugDrawer.RowTitle" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical|start|end"
+        android:gravity="center_vertical">
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/debug_network_endpoint"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/debug_network_endpoint_edit"
+            android:layout_marginLeft="4dp"
+            android:background="?android:attr/actionBarItemBackground"
+            android:baselineAlignBottom="true"
+            android:cropToPadding="true"
+            android:src="@drawable/debug_drawer_icon_edit"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_gravity="center_vertical|start|end"
+        android:text="Proxy"
+        style="@style/Widget.POC.DebugDrawer.RowTitle" />
+
+    <Spinner
+        android:layout_gravity="center_vertical|start|end"
+        android:id="@+id/debug_network_proxy" />
 
 </GridLayout>

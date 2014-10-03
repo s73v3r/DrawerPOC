@@ -8,13 +8,14 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 import com.example.smalsam.drawerpoc.R;
+import com.example.smalsam.drawerpoc.data.StringPreference;
 
 /**
  * Created by smalsam on 10/3/2014.
  */
 
 // Debug Version
-public class AppContainerImpl implements AppContainer{
+public class AppContainerImpl implements AppContainer {
 
     private Activity activity;
     private Context drawerContext;
@@ -37,6 +38,12 @@ public class AppContainerImpl implements AppContainer{
         drawerLayout = (DrawerLayout) activity.findViewById(R.id.debug_drawer_layout);
         drawerLayout.setDrawerShadow(R.drawable.debug_drawer_shadow, Gravity.END);
 
+        setupNetworkSection();
+
         return content;
+    }
+
+    private void setupNetworkSection() {
+        final ApiEndpoints currentEnpoint = ApiEndpoints.from(networkEndpoint.get());
     }
 }
