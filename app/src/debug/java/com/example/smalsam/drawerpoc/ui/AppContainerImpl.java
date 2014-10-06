@@ -38,12 +38,12 @@ public class AppContainerImpl implements AppContainer {
         drawerLayout = (DrawerLayout) activity.findViewById(R.id.debug_drawer_layout);
         drawerLayout.setDrawerShadow(R.drawable.debug_drawer_shadow, Gravity.END);
 
-        setupNetworkSection();
+//        setupNetworkSection();
 
         return content;
     }
 
-    private void setupNetworkSection() {
-        final ApiEndpoints currentEnpoint = ApiEndpoints.from(networkEndpoint.get());
-    }
+//    private void setupNetworkSection() {
+//        final ApiEndpoints currentEnpoint = ApiEndpoints.from(networkEndpoint.get());
+//    }
 }

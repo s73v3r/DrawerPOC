@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="application_name">DrawerPOC Sample Debug</string>
-    <string name="launcher_name">DrawerPOC Debug</string>
+<string name="application_name">DrawerPOC Sample Debug</string>
+<string name="launcher_name">DrawerPOC Debug</string>
 </resources>
